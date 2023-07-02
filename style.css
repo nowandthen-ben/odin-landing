@@ -19,18 +19,34 @@ div.header {
 .row2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.windows {
+    display: flex;
+    justify-content: center;
 }
 
 .row3 {
     background: #E5E7EB;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row4 {
+    background: #3882F6;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
 }
 
 .footer {
     background: #1F2937;
     color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
