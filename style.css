@@ -10,16 +10,28 @@ div.header {
     justify-content: space-between;
 }
 
+.logo img {
+    width: 60px;
+}
+
 .row1 {
     background: #1F2937;
     color: #F9FAF8;
     display: flex;
 }
 
+.row1 img {
+    width: 250px;
+}
+
 .row2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.imgbox img {
+    width: 120px;
 }
 
 .windows {
