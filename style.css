@@ -49,14 +49,11 @@ h2 {
 }
 
 .r1right {
-    display: flex;
-    align-items: center;
+    max-height: 100px;
 }
 
-.row1 img {
-    width: 200px;
-    max-width: 400px;
-    flex-grow: 1;
+.r1right img {
+    max-height: 100%;
 }
 
 button {
@@ -64,9 +61,12 @@ button {
     color: #E5E7EB;
     font-size: 16px;
     font-weight: bold;
-    border: none;
     border-radius: 10px;
     padding: 10px 30px;
+}
+
+.row1 button {
+    border: none;
 }
 
 .row2 {
@@ -90,6 +90,12 @@ button {
 .row3 {
     background: #E5E7EB;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bounds {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -98,23 +104,40 @@ button {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
+    margin: 20px 0 0 0;
 }
 
 .attribution {
     text-align: right;
+    align-self: flex-end;
 }
 
 .row4 {
     background: #3882F6;
+    border-radius: 10px;
+    color: #E5E7EB;
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    margin: auto;
+    max-width: 600px;
+    flex-shrink: 1;
+    margin: 60px;
+    padding: 20px 60px;
+    gap: 50px;
+}
+
+.row4 h4 {
+    margin: 0 0 4px 0;
+}
+
+.row4 p {
+    margin: 0px;
 }
 
 .row4 button {
     border: 2px solid #E5E7EB;
+    flex-shrink: 0;
 }
 
 .footer {
@@ -123,5 +146,5 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px
+    padding: 10px;
 }
